@@ -1,15 +1,14 @@
-import './App.css';
-import {Route, Routes } from 'react-router-dom'
-import { Suspense, lazy } from 'react';
+import {Route, Routes } from "react-router-dom"
+import { Suspense, lazy } from "react";
 
 // Containers
-const DefaultLayout = lazy(() => import('./layout/DefaultLayout'))
+const DefaultLayout = lazy(() => import("./layout/DefaultLayout"))
 
 // Pages
-const Login = lazy(() => import('./views/pages/login/Login'))
-const Register = lazy(() => import('./views/pages/register/Register'))
-const Page404 = lazy(() => import('./views/pages/page404/Page404'))
-const Page500 = lazy(() => import('./views/pages/page500/Page500'))
+const Login = lazy(() => import("./views/pages/login/Login"))
+const Register = lazy(() => import("./views/pages/register/Register"))
+const Page404 = lazy(() => import("./views/pages/page404/Page404"))
+const Page500 = lazy(() => import("./views/pages/page500/Page500"))
 
 function App() {
   return (
